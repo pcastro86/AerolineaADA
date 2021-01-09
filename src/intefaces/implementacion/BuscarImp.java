@@ -1,6 +1,7 @@
 package intefaces.implementacion;
 
 import intefaces.IBuscar;
+import modelos.Pasajero;
 import modelos.Vuelo;
 
 import java.util.ArrayList;

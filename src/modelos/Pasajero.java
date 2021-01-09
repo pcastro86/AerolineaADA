@@ -35,15 +35,15 @@ public class Pasajero {
         this.dni = dni;
     }
 
-    public Ticket comprarTicket(Aerolinea a, Vuelo vuelo, String claseAsiento){
-        Ticket ticket= new Ticket(a, this, vuelo, claseAsiento);
-        Avion avion = vuelo.getAvion();
+    //public Ticket comprarTicket(Aerolinea a, Vuelo vuelo, String claseAsiento){
+        // ticket= new Ticket(a, this, vuelo, claseAsiento);
+        //Avion avion = vuelo.getAvion();
 
        /* int capacidad = avion.getCapacidad();
         avion.setCapacidad( capacidad - 1);
        */
-        return ticket;
-    }
+      //  return ticket;
+   // }
 
     public  Ticket cambiarVuelo (Ticket ticketviejo, Vuelo nuevoVuelo){
         Ticket ticketNuevo =  ticketviejo;
