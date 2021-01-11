@@ -40,7 +40,7 @@ public class MainAle {
         IMascotasAle pasajeroQueViaja = new MascotasAleImp();
         MascotasAle mascotasAle1 = pasajeroQueViaja.crearMascotasAle(aerolineas.get(0), pasajeros.get(0));
 
-        System.out.println(mascotasAle1);
+        System.out.println(mascotasAle1.getMascotasAle());
 
 
     }
