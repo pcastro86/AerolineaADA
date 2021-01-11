@@ -5,7 +5,7 @@ public class Ticket {
     private Pasajero pasajero;
     private Vuelo vuelo;
     private String categoriaAsiento;
-    private int precio;
+    private int precio1;
 
     public Ticket(Aerolinea aerolinea, Pasajero pasajero, Vuelo vuelo, String categoriaAsiento) {
         this.aerolinea = aerolinea;
@@ -14,7 +14,6 @@ public class Ticket {
         this.categoriaAsiento = categoriaAsiento;
 
     }
-
 
     public Aerolinea getAerolinea() {
         return aerolinea;
@@ -48,29 +47,29 @@ public class Ticket {
         this.categoriaAsiento = categoriaAsiento;
     }
 
-    public int getPrecio() {
+    public int getPrecio1() {
         if(categoriaAsiento.equals("clase1")){
-            precio = 50;
+            precio1 = 50;
         }
 
         if(categoriaAsiento.equals("clase2")){
-            precio = 40;
+            precio1 = 40;
         }
 
         if(categoriaAsiento.equals("clase3")){
-            precio = 30;
+            precio1 = 30;
 
         }
         if(aerolinea.getNombreAerolinea().equals("LATAM")){
-            precio = precio + 10;
+            precio1 = precio1 + 10;
         } else {
-            precio = precio - 2;
+            precio1 = precio1 - 2;
         }
-        return precio;
+        return precio1;
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public void setPrecio1(int precio1) {
+        this.precio1 = precio1;
     }
 
     @Override
@@ -80,7 +79,7 @@ public class Ticket {
                 ", pasajero=" + pasajero +
                 ", vuelo=" + vuelo +
                 ", asiento='" + categoriaAsiento + '\'' +
-                ", precio=" + getPrecio() +
+                ", precio=" + getPrecio1() +
                 '}';
     }
 }

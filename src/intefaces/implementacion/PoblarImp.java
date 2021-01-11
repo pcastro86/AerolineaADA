@@ -14,8 +14,8 @@ public class PoblarImp implements IPoblar {
     public List<Aerolinea> crearAerolineas() {
         List <Aerolinea> listadeAerolineas = new ArrayList<>();
 
-        Aerolinea latam = new Aerolinea("LATAM");
-        Aerolinea ae = new Aerolinea("AEROLINEAS ARGENTINAS");
+        Aerolinea latam = new Aerolinea("LATAM", true);
+        Aerolinea ae = new Aerolinea("AEROLINEAS ARGENTINAS", false);
 
         listadeAerolineas.add(latam);
         listadeAerolineas.add(ae);
@@ -27,9 +27,9 @@ public class PoblarImp implements IPoblar {
     public List<Pasajero> crearPasajeros() {
         List <Pasajero> listadePasajeros = new ArrayList<>();
 
-        Pasajero pasa1 = new Pasajero("Pilar", "Castro", 33085669);
-        Pasajero pasa2 = new Pasajero("Matias", "Ojea", 2029282);
-        Pasajero pasa3 = new Pasajero("Gime", "Frand", 282282);
+        Pasajero pasa1 = new Pasajero("Pilar", "Castro", 33085669, true);
+        Pasajero pasa2 = new Pasajero("Matias", "Ojea", 2029282,false);
+        Pasajero pasa3 = new Pasajero("Gime", "Frand", 282282,true);
 
         listadePasajeros.add(pasa1);
         listadePasajeros.add(pasa2);
