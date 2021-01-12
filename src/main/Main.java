@@ -36,7 +36,7 @@ public class Main {
 
         //Ticket t2 = pasajeroQueCompra.cambiarVuelo(t1, vuelos.get(1));
 
-        //System.out.println(t2); CARO PERDOMO QUITÓ ESTE METODO DENTRO DE PASAJERO Y REALIZÓ   INTERFACE COMPRAR EL TICKET 
+        //System.out.println(t2); CARO PERDOMO QUITÓ ESTE METODO DENTRO DE PASAJERO Y REALIZÓ   INTERFACE COMPRAR EL TICKET
 
         IComprarTicket comprarTicket = new ComprarTicketimpl();
         Ticket ticket1 = comprarTicket.ticketComprado(aerolineas.get(1),pasajeros.get(0),vuelos.get(0),"clase2");
