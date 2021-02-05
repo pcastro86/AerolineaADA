@@ -2,9 +2,19 @@ package modelos;
 
 public class Aerolinea {
     private String nombreAerolinea;
+    private boolean mascotas;
 
-    public Aerolinea(String nombreAerolinea) {
+    public Aerolinea(String nombreAerolinea, boolean mascotas) {
         this.nombreAerolinea = nombreAerolinea;
+        this.mascotas = mascotas;
+    }
+
+    public boolean isMascotas() {
+        return mascotas;
+    }
+
+    public void setMascotas(boolean mascotas) {
+        this.mascotas = mascotas;
     }
 
     public String getNombreAerolinea() {
@@ -19,6 +29,7 @@ public class Aerolinea {
     public String toString() {
         return "Aerolinea{" +
                 "nombreAerolinea='" + nombreAerolinea + '\'' +
+                ", mascotas=" + mascotas +
                 '}';
     }
 }

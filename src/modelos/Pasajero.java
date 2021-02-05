@@ -4,11 +4,21 @@ public class Pasajero {
     private String nombre;
     private String apellido;
     private int dni;
+    private boolean mascota;
 
-    public Pasajero(String nombre, String apellido, int dni) {
+    public Pasajero(String nombre, String apellido, int dni, boolean mascota) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
+        this.mascota = mascota;
+    }
+
+    public boolean isMascota() {
+        return mascota;
+    }
+
+    public void setMascota(boolean mascota) {
+        this.mascota = mascota;
     }
 
     public String getNombre() {
@@ -57,7 +67,8 @@ public class Pasajero {
         return "Pasajero{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
-                ", dni='" + dni + '\'' +
+                ", dni=" + dni +
+                ", mascota=" + mascota +
                 '}';
     }
 }
